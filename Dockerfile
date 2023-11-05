@@ -4,6 +4,6 @@ WORKDIR /home/app/
 COPY . /home/app/
 RUN mvn -f /home/app/pom.xml clean install package
 FROM tomcat:9.0
-COPY  target/sample.war /usr/local/tomcat/webapps/sample.war
+COPY  --from=stage1 /home/app/target/sample.war /usr/local/tomcat/webapps/sample.war
 
 
