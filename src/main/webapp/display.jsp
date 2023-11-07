@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>SGPA CALCULATOR FOR PERCENTAGE</title>
+<title>SGPA CALCULATOR FOR</title>
 </head>
 <body style="background-color:sandybrown;">
     <h1 style="color:AliceBlue; font-size:350%; text-align:center;">Your Sgpa for this semester is : <%= request.getAttribute("mul") %><br></h1>
